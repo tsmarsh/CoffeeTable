@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/coffeetable.js"></script>
+	<style>
+		div {
+			width: 80%;
+			height: 20%;
+			margin: 3%;
+			border-style: solid;
+			border-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div id="available-dimensions">
+		<ul>
+		</ul>
+	</div>
+	<div id="selected-dimensions" class="droppable"></div>
+	<div id="break-down"></div>
+	
+	<script id="dimension-template" type="text/x-jquery-tmpl">
+		<li class="dimension draggable">
+			<strong>${name}</strong>
+		</li>
+	</script>
+	
+</body>
+</html>
